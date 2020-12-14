@@ -53,9 +53,10 @@ class m201214_145340_company_table extends Migration
                     $faker->address,   // address
                 ];
             }
-            Yii::$app->db->createCommand()->batchInsert('company', ['name', 'inn',
+            // Для заполнения таблицы company уберите комментарии
+            /*Yii::$app->db->createCommand()->batchInsert('company', ['name', 'inn',
                 'dg', 'address'], $counter_rates)->execute();
-            unset($counter_rates);
+            unset($counter_rates);*/
         }
         //die('Data generation is complete!');
     }
